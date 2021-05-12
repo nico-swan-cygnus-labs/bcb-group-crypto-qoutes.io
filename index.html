@@ -1,0 +1,632 @@
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Scully 1.1.1">
+  <meta charset="utf-8">
+  <title>BcbgroupCryptoQuotesClient</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LnNjc3MifQ== */</style><script charset="utf-8" src="pages-quotes-quotes-module.js"></script><style>.sidenav-container[_ngcontent-vef-c164] {
+  height: 100%;
+  background-color: #212331;
+}
+
+h1[_ngcontent-vef-c164] {
+  font-size: 38px;
+}
+
+.sidenav[_ngcontent-vef-c164] {
+  width: 200px;
+}
+
+.sidenav[_ngcontent-vef-c164]   .mat-toolbar[_ngcontent-vef-c164] {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary[_ngcontent-vef-c164] {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100% !important;
+}
+
+.connected[_ngcontent-vef-c164] {
+  color: green;
+}
+
+.connected[_ngcontent-vef-c164]:after {
+  content: "CONNECTED";
+}
+
+.disconnected[_ngcontent-vef-c164] {
+  color: red;
+}
+
+.disconnected[_ngcontent-vef-c164]:after {
+  content: "DISCONNECTED";
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFxsYXlvdXQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxZQUFBO0VBQ0EseUJBQUE7QUFDRjs7QUFFQTtFQUNFLGVBQUE7QUFDRjs7QUFFQTtFQUNFLFlBQUE7QUFDRjs7QUFFQTtFQUNFLG1CQUFBO0FBQ0Y7O0FBRUE7RUFDRSxnQkFBQTtFQUNBLE1BQUE7RUFDQSxVQUFBO0VBQ0Msc0JBQUE7QUFDSDs7QUFFQTtFQUNJLFlBQUE7QUFDSjs7QUFDQTtFQUNJLG9CQUFBO0FBRUo7O0FBQUE7RUFDSSxVQUFBO0FBR0o7O0FBREE7RUFDSSx1QkFBQTtBQUlKIiwiZmlsZSI6ImxheW91dC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zaWRlbmF2LWNvbnRhaW5lciB7XHJcbiAgaGVpZ2h0OiAxMDAlO1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMyMTIzMzE7XHJcbn1cclxuXHJcbmgxIHtcclxuICBmb250LXNpemU6IDM4cHg7XHJcbn1cclxuXHJcbi5zaWRlbmF2IHtcclxuICB3aWR0aDogMjAwcHg7XHJcbn1cclxuXHJcbi5zaWRlbmF2IC5tYXQtdG9vbGJhciB7XHJcbiAgYmFja2dyb3VuZDogaW5oZXJpdDtcclxufVxyXG5cclxuLm1hdC10b29sYmFyLm1hdC1wcmltYXJ5IHtcclxuICBwb3NpdGlvbjogc3RpY2t5O1xyXG4gIHRvcDogMDtcclxuICB6LWluZGV4OiAxO1xyXG4gICB3aWR0aDogMTAwJSAhaW1wb3J0YW50O1xyXG59XHJcblxyXG4uY29ubmVjdGVkIHtcclxuICAgIGNvbG9yOiBncmVlbjtcclxufVxyXG4uY29ubmVjdGVkOmFmdGVyIHtcclxuICAgIGNvbnRlbnQ6ICdDT05ORUNURUQnO1xyXG59XHJcbi5kaXNjb25uZWN0ZWQge1xyXG4gICAgY29sb3I6IHJlZDtcclxufVxyXG4uZGlzY29ubmVjdGVkOmFmdGVyIHtcclxuICAgIGNvbnRlbnQ6ICdESVNDT05ORUNURUQnO1xyXG59XHJcbiJdfQ== */</style><style>.mat-drawer-container{position:relative;z-index:1;box-sizing:border-box;-webkit-overflow-scrolling:touch;display:block;overflow:hidden}.mat-drawer-container[fullscreen]{top:0;left:0;right:0;bottom:0;position:absolute}.mat-drawer-container[fullscreen].mat-drawer-container-has-open{overflow:hidden}.mat-drawer-container.mat-drawer-container-explicit-backdrop .mat-drawer-side{z-index:3}.mat-drawer-container.ng-animate-disabled .mat-drawer-backdrop,.mat-drawer-container.ng-animate-disabled .mat-drawer-content,.ng-animate-disabled .mat-drawer-container .mat-drawer-backdrop,.ng-animate-disabled .mat-drawer-container .mat-drawer-content{transition:none}.mat-drawer-backdrop{top:0;left:0;right:0;bottom:0;position:absolute;display:block;z-index:3;visibility:hidden}.mat-drawer-backdrop.mat-drawer-shown{visibility:visible}.mat-drawer-transition .mat-drawer-backdrop{transition-duration:400ms;transition-timing-function:cubic-bezier(0.25, 0.8, 0.25, 1);transition-property:background-color,visibility}.cdk-high-contrast-active .mat-drawer-backdrop{opacity:.5}.mat-drawer-content{position:relative;z-index:1;display:block;height:100%;overflow:auto}.mat-drawer-transition .mat-drawer-content{transition-duration:400ms;transition-timing-function:cubic-bezier(0.25, 0.8, 0.25, 1);transition-property:transform,margin-left,margin-right}.mat-drawer{position:relative;z-index:4;display:block;position:absolute;top:0;bottom:0;z-index:3;outline:0;box-sizing:border-box;overflow-y:auto;transform:translate3d(-100%, 0, 0)}.cdk-high-contrast-active .mat-drawer,.cdk-high-contrast-active [dir=rtl] .mat-drawer.mat-drawer-end{border-right:solid 1px currentColor}.cdk-high-contrast-active [dir=rtl] .mat-drawer,.cdk-high-contrast-active .mat-drawer.mat-drawer-end{border-left:solid 1px currentColor;border-right:none}.mat-drawer.mat-drawer-side{z-index:2}.mat-drawer.mat-drawer-end{right:0;transform:translate3d(100%, 0, 0)}[dir=rtl] .mat-drawer{transform:translate3d(100%, 0, 0)}[dir=rtl] .mat-drawer.mat-drawer-end{left:0;right:auto;transform:translate3d(-100%, 0, 0)}.mat-drawer-inner-container{width:100%;height:100%;overflow:auto;-webkit-overflow-scrolling:touch}.mat-sidenav-fixed{position:fixed}
+</style><style>.cdk-high-contrast-active .mat-toolbar{outline:solid 1px}.mat-toolbar-row,.mat-toolbar-single-row{display:flex;box-sizing:border-box;padding:0 16px;width:100%;flex-direction:row;align-items:center;white-space:nowrap}.mat-toolbar-multiple-rows{display:flex;box-sizing:border-box;flex-direction:column;width:100%}
+</style><style>.quote-container[_ngcontent-vef-c260] {
+  margin: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: calc(100vh - 120px);
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFxxdW90ZXMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxtQkFBQTtFQUNBLDJCQUFBO0FBQ0YiLCJmaWxlIjoicXVvdGVzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnF1b3RlLWNvbnRhaW5lciB7XG4gIG1hcmdpbjogMjBweDtcbiAgbWFyZ2luLWxlZnQ6IDEwMHB4O1xuICBtYXJnaW4tcmlnaHQ6IDEwMHB4O1xuICBoZWlnaHQ6IGNhbGMoMTAwdmggLSAxMjBweCk7XG59XG5cbiJdfQ== */</style><style>.mat-chip{position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;transform:translateZ(0);border:none;-webkit-appearance:none;-moz-appearance:none}.mat-standard-chip{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);display:inline-flex;padding:7px 12px;border-radius:16px;align-items:center;cursor:default;min-height:32px;height:1px}._mat-animation-noopable.mat-standard-chip{transition:none;animation:none}.mat-standard-chip .mat-chip-remove.mat-icon{width:18px;height:18px}.mat-standard-chip::after{top:0;left:0;right:0;bottom:0;position:absolute;border-radius:inherit;opacity:0;content:"";pointer-events:none;transition:opacity 200ms cubic-bezier(0.35, 0, 0.25, 1)}.mat-standard-chip:hover::after{opacity:.12}.mat-standard-chip:focus{outline:none}.mat-standard-chip:focus::after{opacity:.16}.cdk-high-contrast-active .mat-standard-chip{outline:solid 1px}.cdk-high-contrast-active .mat-standard-chip:focus{outline:dotted 2px}.mat-standard-chip.mat-chip-disabled::after{opacity:0}.mat-standard-chip.mat-chip-disabled .mat-chip-remove,.mat-standard-chip.mat-chip-disabled .mat-chip-trailing-icon{cursor:default}.mat-standard-chip.mat-chip-with-trailing-icon.mat-chip-with-avatar,.mat-standard-chip.mat-chip-with-avatar{padding-top:0;padding-bottom:0}.mat-standard-chip.mat-chip-with-trailing-icon.mat-chip-with-avatar{padding-right:8px;padding-left:0}[dir=rtl] .mat-standard-chip.mat-chip-with-trailing-icon.mat-chip-with-avatar{padding-left:8px;padding-right:0}.mat-standard-chip.mat-chip-with-trailing-icon{padding-top:7px;padding-bottom:7px;padding-right:8px;padding-left:12px}[dir=rtl] .mat-standard-chip.mat-chip-with-trailing-icon{padding-left:8px;padding-right:12px}.mat-standard-chip.mat-chip-with-avatar{padding-left:0;padding-right:12px}[dir=rtl] .mat-standard-chip.mat-chip-with-avatar{padding-right:0;padding-left:12px}.mat-standard-chip .mat-chip-avatar{width:24px;height:24px;margin-right:8px;margin-left:4px}[dir=rtl] .mat-standard-chip .mat-chip-avatar{margin-left:8px;margin-right:4px}.mat-standard-chip .mat-chip-remove,.mat-standard-chip .mat-chip-trailing-icon{width:18px;height:18px;cursor:pointer}.mat-standard-chip .mat-chip-remove,.mat-standard-chip .mat-chip-trailing-icon{margin-left:8px;margin-right:0}[dir=rtl] .mat-standard-chip .mat-chip-remove,[dir=rtl] .mat-standard-chip .mat-chip-trailing-icon{margin-right:8px;margin-left:0}.mat-chip-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit;overflow:hidden}.mat-chip-list-wrapper{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;margin:-4px}.mat-chip-list-wrapper input.mat-input-element,.mat-chip-list-wrapper .mat-standard-chip{margin:4px}.mat-chip-list-stacked .mat-chip-list-wrapper{flex-direction:column;align-items:flex-start}.mat-chip-list-stacked .mat-chip-list-wrapper .mat-standard-chip{width:100%}.mat-chip-avatar{border-radius:50%;justify-content:center;align-items:center;display:flex;overflow:hidden;object-fit:cover}input.mat-chip-input{width:150px;margin:4px;flex:1 0 150px}
+</style><style type="text/css">
+/*
+  @angular/flex-layout - workaround for possible browser quirk with mediaQuery listeners
+  see http://bit.ly/2sd4HMP
+*/
+@media screen and (min-width: 600px), screen and (min-width: 960px), screen and (min-width: 1280px), screen and (min-width: 1920px), screen and (min-width: 1920px) and (max-width: 4999.98px), screen and (max-width: 1919.98px), screen and (min-width: 1280px) and (max-width: 1919.98px), screen and (max-width: 1279.98px), screen and (min-width: 960px) and (max-width: 1279.98px), screen and (max-width: 959.98px), screen and (min-width: 600px) and (max-width: 959.98px), screen and (max-width: 599.98px), screen and (min-width: 0px) and (max-width: 599.98px), print {.fx-query-test{ }}
+</style><style>mat-chip[_ngcontent-vef-c259] {
+  min-width: 80vw;
+  min-height: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.coin-symbol[_ngcontent-vef-c259] {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 800;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFxxdW90ZS1yb3cuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxnQkFBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtBQUNGOztBQUVBO0VBQ0ksa0JBQUE7RUFDQSxtQkFBQTtFQUNBLGdCQUFBO0FBQ0oiLCJmaWxlIjoicXVvdGUtcm93LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LWNoaXAge1xuICBtaW4td2lkdGg6IDgwdnc7XG4gIG1pbi1oZWlnaHQ6IDYwcHg7XG4gIG1hcmdpbi10b3A6IDEwcHg7XG4gIG1hcmdpbi1ib3R0b206IDEwcHg7XG4gIG1hcmdpbi1sZWZ0OiAxMHZ3O1xuICBtYXJnaW4tcmlnaHQ6IDEwdnc7XG59XG5cbi5jb2luLXN5bWJvbCB7XG4gICAgcGFkZGluZy1sZWZ0OiAzMHB4O1xuICAgIHBhZGRpbmctcmlnaHQ6IDMwcHg7XG4gICAgZm9udC13ZWlnaHQ6IDgwMDtcbn1cblxuXG4iXX0= */</style><style>mat-chip[_ngcontent-vef-c258] {
+  max-width: 150px;
+  min-width: 150px;
+}
+
+.currency-symbol[_ngcontent-vef-c258] {
+  color: #0060f5;
+  padding-right: 5px;
+}
+
+.price-up[_ngcontent-vef-c258] {
+  color: #3dd966 !important;
+}
+
+.price-down[_ngcontent-vef-c258] {
+  color: #ff7878 !important;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFxxdW90ZS1wcmljZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFBO0VBQ0EsZ0JBQUE7QUFDRjs7QUFFQTtFQUNJLGNBQUE7RUFDQSxrQkFBQTtBQUNKOztBQUVBO0VBQ0kseUJBQUE7QUFDSjs7QUFDQTtFQUNJLHlCQUFBO0FBRUoiLCJmaWxlIjoicXVvdGUtcHJpY2UuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtY2hpcCB7XG4gIG1heC13aWR0aDogMTUwcHg7XG4gIG1pbi13aWR0aDogMTUwcHg7XG59XG5cbi5jdXJyZW5jeS1zeW1ib2wge1xuICAgIGNvbG9yOiMwMDYwZjU7IFxuICAgIHBhZGRpbmctcmlnaHQ6IDVweDtcbn1cblxuLnByaWNlLXVwIHtcbiAgICBjb2xvcjogIzNkZDk2NiAhaW1wb3J0YW50O1xufVxuLnByaWNlLWRvd24ge1xuICAgIGNvbG9yOiAjZmY3ODc4ICFpbXBvcnRhbnQ7XG59Il19 */</style><script>window['ScullyIO']='generated';</script></head>
+<body class="mat-typography" scully-version="1.1.1">
+  <app-root _nghost-vef-c165="" ng-version="11.2.13"><router-outlet _ngcontent-vef-c165=""></router-outlet><app-layout _nghost-vef-c164=""><mat-sidenav-container _ngcontent-vef-c164="" class="mat-drawer-container mat-sidenav-container sidenav-container"><div class="mat-drawer-backdrop"></div><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><mat-sidenav-content _ngcontent-vef-c164="" class="mat-drawer-content mat-sidenav-content"><mat-toolbar _ngcontent-vef-c164="" color="accent-0" fxlayout="row" fxlayoutalign="space-between center" class="mat-toolbar mat-accent-0 mat-toolbar-single-row" ng-reflect-color="accent-0"><img _ngcontent-vef-c164="" src=" assets/logo.png" height="40" alt="BCB Group Logo" loading="lazy" class="d-inline-block align-top"><span _ngcontent-vef-c164="" style="flex: 1 1 auto;"></span><span _ngcontent-vef-c164=""><h1 _ngcontent-vef-c164=""> Crypto Quotes </h1></span><span _ngcontent-vef-c164="" style="flex: 1 1 auto;"></span><span _ngcontent-vef-c164="" ng-reflect-ng-class="connected" class="connected"></span></mat-toolbar><router-outlet _ngcontent-vef-c164=""></router-outlet><app-quotes _nghost-vef-c260=""><div _ngcontent-vef-c260="" class="quote-container"><div _ngcontent-vef-c260="" style="height: 100%; padding-top: 80px; padding-bottom: 80px;"><div _ngcontent-vef-c260=""><mat-chip-list _ngcontent-vef-c260="" fxlayout="column" fxlayoutalign="space-around center" class="mat-chip-list" ng-reflect-fx-layout="column" ng-reflect-fx-layout-align="space-around center" id="mat-chip-list-0" tabindex="-1" aria-disabled="false" aria-invalid="false" aria-multiselectable="false" aria-orientation="horizontal" style="flex-direction: column; box-sizing: border-box; display: flex; place-content: center space-around; align-items: center;"><div class="mat-chip-list-wrapper"><app-quote-row _ngcontent-vef-c260="" _nghost-vef-c259="" ng-reflect-symbol="BCH" ng-reflect-quotes="[object Map]" style="flex-direction: row; box-sizing: border-box; display: flex;"><mat-chip _ngcontent-vef-c259="" role="option" fxflex="grow" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" ng-reflect-fx-flex="grow" tabindex="-1" aria-disabled="false" style="flex: 1 1 100%; box-sizing: border-box; max-width: 100%; flex-direction: row; display: flex;"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c259="" fxlayout="row" fxlayoutalign="space-between center" fxflex="" class="quote-row" ng-reflect-fx-flex="" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-between center" style="flex: 1 1 0%; box-sizing: border-box; flex-direction: row; display: flex; place-content: center space-between; align-items: center;"><div _ngcontent-vef-c259="" fxflex="10" ng-reflect-fx-flex="10" style="flex: 1 1 100%; box-sizing: border-box; max-width: 10%;"><span _ngcontent-vef-c259="" class="coin-symbol">BCH</span></div><span _ngcontent-vef-c259="" style="flex: 1 1 auto;"></span><mat-chip-list _ngcontent-vef-c259="" cdkdroplistorientation="horizontal" class="mat-chip-list quote-row-price-list" id="mat-chip-list-1" tabindex="-1" aria-disabled="false" aria-invalid="false" aria-multiselectable="false" aria-orientation="horizontal"><div class="mat-chip-list-wrapper"><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="EUR" ng-reflect-price="1243" ng-reflect-route-link="/info/BCH/EUR"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/BCH/EUR" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="euro-sign" class="svg-inline--fa fa-euro-sign fa-w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.706 413.765c-1.314-6.63-7.835-10.872-14.424-9.369-10.692 2.439-27.422 5.413-45.426 5.413-56.763 0-101.929-34.79-121.461-85.449h113.689a12 12 0 0 0 11.708-9.369l6.373-28.36c1.686-7.502-4.019-14.631-11.708-14.631H115.22c-1.21-14.328-1.414-28.287.137-42.245H261.95a12 12 0 0 0 11.723-9.434l6.512-29.755c1.638-7.484-4.061-14.566-11.723-14.566H130.184c20.633-44.991 62.69-75.03 117.619-75.03 14.486 0 28.564 2.25 37.851 4.145 6.216 1.268 12.347-2.498 14.002-8.623l11.991-44.368c1.822-6.741-2.465-13.616-9.326-14.917C290.217 34.912 270.71 32 249.635 32 152.451 32 74.03 92.252 45.075 176H12c-6.627 0-12 5.373-12 12v29.755c0 6.627 5.373 12 12 12h21.569c-1.009 13.607-1.181 29.287-.181 42.245H12c-6.627 0-12 5.373-12 12v28.36c0 6.627 5.373 12 12 12h30.114C67.139 414.692 145.264 480 249.635 480c26.301 0 48.562-4.544 61.101-7.788 6.167-1.595 10.027-7.708 8.788-13.957l-8.818-44.49z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">1243</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="GBP" ng-reflect-price="1065" ng-reflect-route-link="/info/BCH/GBP"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/BCH/GBP" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pound-sign" class="svg-inline--fa fa-pound-sign fa-w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M308 352h-45.495c-6.627 0-12 5.373-12 12v50.848H128V288h84c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-84v-63.556c0-32.266 24.562-57.086 61.792-57.086 23.658 0 45.878 11.505 57.652 18.849 5.151 3.213 11.888 2.051 15.688-2.685l28.493-35.513c4.233-5.276 3.279-13.005-2.119-17.081C273.124 54.56 236.576 32 187.931 32 106.026 32 48 84.742 48 157.961V224H20c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h28v128H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h296c6.627 0 12-5.373 12-12V364c0-6.627-5.373-12-12-12z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">1065</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="JPY" ng-reflect-price="163531" ng-reflect-route-link="/info/BCH/JPY"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/BCH/JPY" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="yen-sign" class="svg-inline--fa fa-yen-sign fa-w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M351.2 32h-65.3c-4.6 0-8.8 2.6-10.8 6.7l-55.4 113.2c-14.5 34.7-27.1 71.9-27.1 71.9h-1.3s-12.6-37.2-27.1-71.9L108.8 38.7c-2-4.1-6.2-6.7-10.8-6.7H32.8c-9.1 0-14.8 9.7-10.6 17.6L102.3 200H44c-6.6 0-12 5.4-12 12v32c0 6.6 5.4 12 12 12h88.2l19.8 37.2V320H44c-6.6 0-12 5.4-12 12v32c0 6.6 5.4 12 12 12h108v92c0 6.6 5.4 12 12 12h56c6.6 0 12-5.4 12-12v-92h108c6.6 0 12-5.4 12-12v-32c0-6.6-5.4-12-12-12H232v-26.8l19.8-37.2H340c6.6 0 12-5.4 12-12v-32c0-6.6-5.4-12-12-12h-58.3l80.1-150.4c4.3-7.9-1.5-17.6-10.6-17.6z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">163531</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="USD" ng-reflect-price="1507" ng-reflect-route-link="/info/BCH/USD"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/BCH/USD" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign" class="svg-inline--fa fa-dollar-sign fa-w-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512"><path fill="currentColor" d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">1507</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="ZAR" ng-reflect-price="21974" ng-reflect-route-link="/info/BCH/ZAR"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/BCH/ZAR" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><div _ngcontent-vef-c258="" class="currency-symbol"><b _ngcontent-vef-c258="">R</b></div><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">21974</span></div></mat-chip></app-quote-price></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></mat-chip-list></div></mat-chip></app-quote-row><app-quote-row _ngcontent-vef-c260="" _nghost-vef-c259="" ng-reflect-symbol="BTC" ng-reflect-quotes="[object Map]" style="flex-direction: row; box-sizing: border-box; display: flex;"><mat-chip _ngcontent-vef-c259="" role="option" fxflex="grow" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" ng-reflect-fx-flex="grow" tabindex="-1" aria-disabled="false" style="flex: 1 1 100%; box-sizing: border-box; max-width: 100%; flex-direction: row; display: flex;"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c259="" fxlayout="row" fxlayoutalign="space-between center" fxflex="" class="quote-row" ng-reflect-fx-flex="" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-between center" style="flex: 1 1 0%; box-sizing: border-box; flex-direction: row; display: flex; place-content: center space-between; align-items: center;"><div _ngcontent-vef-c259="" fxflex="10" ng-reflect-fx-flex="10" style="flex: 1 1 100%; box-sizing: border-box; max-width: 10%;"><span _ngcontent-vef-c259="" class="coin-symbol">BTC</span></div><span _ngcontent-vef-c259="" style="flex: 1 1 auto;"></span><mat-chip-list _ngcontent-vef-c259="" cdkdroplistorientation="horizontal" class="mat-chip-list quote-row-price-list" id="mat-chip-list-2" tabindex="-1" aria-disabled="false" aria-invalid="false" aria-multiselectable="false" aria-orientation="horizontal"><div class="mat-chip-list-wrapper"><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="EUR" ng-reflect-price="46643" ng-reflect-direction="DOWN" ng-reflect-route-link="/info/BTC/EUR"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/BTC/EUR" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="euro-sign" class="svg-inline--fa fa-euro-sign fa-w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.706 413.765c-1.314-6.63-7.835-10.872-14.424-9.369-10.692 2.439-27.422 5.413-45.426 5.413-56.763 0-101.929-34.79-121.461-85.449h113.689a12 12 0 0 0 11.708-9.369l6.373-28.36c1.686-7.502-4.019-14.631-11.708-14.631H115.22c-1.21-14.328-1.414-28.287.137-42.245H261.95a12 12 0 0 0 11.723-9.434l6.512-29.755c1.638-7.484-4.061-14.566-11.723-14.566H130.184c20.633-44.991 62.69-75.03 117.619-75.03 14.486 0 28.564 2.25 37.851 4.145 6.216 1.268 12.347-2.498 14.002-8.623l11.991-44.368c1.822-6.741-2.465-13.616-9.326-14.917C290.217 34.912 270.71 32 249.635 32 152.451 32 74.03 92.252 45.075 176H12c-6.627 0-12 5.373-12 12v29.755c0 6.627 5.373 12 12 12h21.569c-1.009 13.607-1.181 29.287-.181 42.245H12c-6.627 0-12 5.373-12 12v28.36c0 6.627 5.373 12 12 12h30.114C67.139 414.692 145.264 480 249.635 480c26.301 0 48.562-4.544 61.101-7.788 6.167-1.595 10.027-7.708 8.788-13.957l-8.818-44.49z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-down" class="price-down">46643</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="GBP" ng-reflect-price="40031" ng-reflect-direction="DOWN" ng-reflect-route-link="/info/BTC/GBP"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/BTC/GBP" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pound-sign" class="svg-inline--fa fa-pound-sign fa-w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M308 352h-45.495c-6.627 0-12 5.373-12 12v50.848H128V288h84c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-84v-63.556c0-32.266 24.562-57.086 61.792-57.086 23.658 0 45.878 11.505 57.652 18.849 5.151 3.213 11.888 2.051 15.688-2.685l28.493-35.513c4.233-5.276 3.279-13.005-2.119-17.081C273.124 54.56 236.576 32 187.931 32 106.026 32 48 84.742 48 157.961V224H20c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h28v128H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h296c6.627 0 12-5.373 12-12V364c0-6.627-5.373-12-12-12z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-down" class="price-down">40031</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="JPY" ng-reflect-price="6154655" ng-reflect-route-link="/info/BTC/JPY"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/BTC/JPY" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="yen-sign" class="svg-inline--fa fa-yen-sign fa-w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M351.2 32h-65.3c-4.6 0-8.8 2.6-10.8 6.7l-55.4 113.2c-14.5 34.7-27.1 71.9-27.1 71.9h-1.3s-12.6-37.2-27.1-71.9L108.8 38.7c-2-4.1-6.2-6.7-10.8-6.7H32.8c-9.1 0-14.8 9.7-10.6 17.6L102.3 200H44c-6.6 0-12 5.4-12 12v32c0 6.6 5.4 12 12 12h88.2l19.8 37.2V320H44c-6.6 0-12 5.4-12 12v32c0 6.6 5.4 12 12 12h108v92c0 6.6 5.4 12 12 12h56c6.6 0 12-5.4 12-12v-92h108c6.6 0 12-5.4 12-12v-32c0-6.6-5.4-12-12-12H232v-26.8l19.8-37.2H340c6.6 0 12-5.4 12-12v-32c0-6.6-5.4-12-12-12h-58.3l80.1-150.4c4.3-7.9-1.5-17.6-10.6-17.6z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">6154655</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="USD" ng-reflect-price="56576" ng-reflect-route-link="/info/BTC/USD"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/BTC/USD" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign" class="svg-inline--fa fa-dollar-sign fa-w-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512"><path fill="currentColor" d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">56576</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="ZAR" ng-reflect-price="825170" ng-reflect-route-link="/info/BTC/ZAR"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/BTC/ZAR" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><div _ngcontent-vef-c258="" class="currency-symbol"><b _ngcontent-vef-c258="">R</b></div><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">825170</span></div></mat-chip></app-quote-price></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></mat-chip-list></div></mat-chip></app-quote-row><app-quote-row _ngcontent-vef-c260="" _nghost-vef-c259="" ng-reflect-symbol="ETC" ng-reflect-quotes="[object Map]" style="flex-direction: row; box-sizing: border-box; display: flex;"><mat-chip _ngcontent-vef-c259="" role="option" fxflex="grow" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" ng-reflect-fx-flex="grow" tabindex="-1" aria-disabled="false" style="flex: 1 1 100%; box-sizing: border-box; max-width: 100%; flex-direction: row; display: flex;"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c259="" fxlayout="row" fxlayoutalign="space-between center" fxflex="" class="quote-row" ng-reflect-fx-flex="" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-between center" style="flex: 1 1 0%; box-sizing: border-box; flex-direction: row; display: flex; place-content: center space-between; align-items: center;"><div _ngcontent-vef-c259="" fxflex="10" ng-reflect-fx-flex="10" style="flex: 1 1 100%; box-sizing: border-box; max-width: 10%;"><span _ngcontent-vef-c259="" class="coin-symbol">ETC</span></div><span _ngcontent-vef-c259="" style="flex: 1 1 auto;"></span><mat-chip-list _ngcontent-vef-c259="" cdkdroplistorientation="horizontal" class="mat-chip-list quote-row-price-list" id="mat-chip-list-3" tabindex="-1" aria-disabled="false" aria-invalid="false" aria-multiselectable="false" aria-orientation="horizontal"><div class="mat-chip-list-wrapper"><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="EUR" ng-reflect-price="89" ng-reflect-route-link="/info/ETC/EUR"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/ETC/EUR" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="euro-sign" class="svg-inline--fa fa-euro-sign fa-w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.706 413.765c-1.314-6.63-7.835-10.872-14.424-9.369-10.692 2.439-27.422 5.413-45.426 5.413-56.763 0-101.929-34.79-121.461-85.449h113.689a12 12 0 0 0 11.708-9.369l6.373-28.36c1.686-7.502-4.019-14.631-11.708-14.631H115.22c-1.21-14.328-1.414-28.287.137-42.245H261.95a12 12 0 0 0 11.723-9.434l6.512-29.755c1.638-7.484-4.061-14.566-11.723-14.566H130.184c20.633-44.991 62.69-75.03 117.619-75.03 14.486 0 28.564 2.25 37.851 4.145 6.216 1.268 12.347-2.498 14.002-8.623l11.991-44.368c1.822-6.741-2.465-13.616-9.326-14.917C290.217 34.912 270.71 32 249.635 32 152.451 32 74.03 92.252 45.075 176H12c-6.627 0-12 5.373-12 12v29.755c0 6.627 5.373 12 12 12h21.569c-1.009 13.607-1.181 29.287-.181 42.245H12c-6.627 0-12 5.373-12 12v28.36c0 6.627 5.373 12 12 12h30.114C67.139 414.692 145.264 480 249.635 480c26.301 0 48.562-4.544 61.101-7.788 6.167-1.595 10.027-7.708 8.788-13.957l-8.818-44.49z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">89</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="GBP" ng-reflect-price="76" ng-reflect-route-link="/info/ETC/GBP"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/ETC/GBP" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pound-sign" class="svg-inline--fa fa-pound-sign fa-w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M308 352h-45.495c-6.627 0-12 5.373-12 12v50.848H128V288h84c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-84v-63.556c0-32.266 24.562-57.086 61.792-57.086 23.658 0 45.878 11.505 57.652 18.849 5.151 3.213 11.888 2.051 15.688-2.685l28.493-35.513c4.233-5.276 3.279-13.005-2.119-17.081C273.124 54.56 236.576 32 187.931 32 106.026 32 48 84.742 48 157.961V224H20c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h28v128H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h296c6.627 0 12-5.373 12-12V364c0-6.627-5.373-12-12-12z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">76</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="JPY" ng-reflect-price="12000" ng-reflect-route-link="/info/ETC/JPY"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/ETC/JPY" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="yen-sign" class="svg-inline--fa fa-yen-sign fa-w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M351.2 32h-65.3c-4.6 0-8.8 2.6-10.8 6.7l-55.4 113.2c-14.5 34.7-27.1 71.9-27.1 71.9h-1.3s-12.6-37.2-27.1-71.9L108.8 38.7c-2-4.1-6.2-6.7-10.8-6.7H32.8c-9.1 0-14.8 9.7-10.6 17.6L102.3 200H44c-6.6 0-12 5.4-12 12v32c0 6.6 5.4 12 12 12h88.2l19.8 37.2V320H44c-6.6 0-12 5.4-12 12v32c0 6.6 5.4 12 12 12h108v92c0 6.6 5.4 12 12 12h56c6.6 0 12-5.4 12-12v-92h108c6.6 0 12-5.4 12-12v-32c0-6.6-5.4-12-12-12H232v-26.8l19.8-37.2H340c6.6 0 12-5.4 12-12v-32c0-6.6-5.4-12-12-12h-58.3l80.1-150.4c4.3-7.9-1.5-17.6-10.6-17.6z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">12000</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="USD" ng-reflect-price="107" ng-reflect-route-link="/info/ETC/USD"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/ETC/USD" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign" class="svg-inline--fa fa-dollar-sign fa-w-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512"><path fill="currentColor" d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">107</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="ZAR" ng-reflect-price="1570" ng-reflect-route-link="/info/ETC/ZAR"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/ETC/ZAR" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><div _ngcontent-vef-c258="" class="currency-symbol"><b _ngcontent-vef-c258="">R</b></div><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">1570</span></div></mat-chip></app-quote-price></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></mat-chip-list></div></mat-chip></app-quote-row><app-quote-row _ngcontent-vef-c260="" _nghost-vef-c259="" ng-reflect-symbol="ETH" ng-reflect-quotes="[object Map]" style="flex-direction: row; box-sizing: border-box; display: flex;"><mat-chip _ngcontent-vef-c259="" role="option" fxflex="grow" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" ng-reflect-fx-flex="grow" tabindex="-1" aria-disabled="false" style="flex: 1 1 100%; box-sizing: border-box; max-width: 100%; flex-direction: row; display: flex;"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c259="" fxlayout="row" fxlayoutalign="space-between center" fxflex="" class="quote-row" ng-reflect-fx-flex="" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-between center" style="flex: 1 1 0%; box-sizing: border-box; flex-direction: row; display: flex; place-content: center space-between; align-items: center;"><div _ngcontent-vef-c259="" fxflex="10" ng-reflect-fx-flex="10" style="flex: 1 1 100%; box-sizing: border-box; max-width: 10%;"><span _ngcontent-vef-c259="" class="coin-symbol">ETH</span></div><span _ngcontent-vef-c259="" style="flex: 1 1 auto;"></span><mat-chip-list _ngcontent-vef-c259="" cdkdroplistorientation="horizontal" class="mat-chip-list quote-row-price-list" id="mat-chip-list-4" tabindex="-1" aria-disabled="false" aria-invalid="false" aria-multiselectable="false" aria-orientation="horizontal"><div class="mat-chip-list-wrapper"><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="EUR" ng-reflect-price="3541" ng-reflect-route-link="/info/ETH/EUR"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/ETH/EUR" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="euro-sign" class="svg-inline--fa fa-euro-sign fa-w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.706 413.765c-1.314-6.63-7.835-10.872-14.424-9.369-10.692 2.439-27.422 5.413-45.426 5.413-56.763 0-101.929-34.79-121.461-85.449h113.689a12 12 0 0 0 11.708-9.369l6.373-28.36c1.686-7.502-4.019-14.631-11.708-14.631H115.22c-1.21-14.328-1.414-28.287.137-42.245H261.95a12 12 0 0 0 11.723-9.434l6.512-29.755c1.638-7.484-4.061-14.566-11.723-14.566H130.184c20.633-44.991 62.69-75.03 117.619-75.03 14.486 0 28.564 2.25 37.851 4.145 6.216 1.268 12.347-2.498 14.002-8.623l11.991-44.368c1.822-6.741-2.465-13.616-9.326-14.917C290.217 34.912 270.71 32 249.635 32 152.451 32 74.03 92.252 45.075 176H12c-6.627 0-12 5.373-12 12v29.755c0 6.627 5.373 12 12 12h21.569c-1.009 13.607-1.181 29.287-.181 42.245H12c-6.627 0-12 5.373-12 12v28.36c0 6.627 5.373 12 12 12h30.114C67.139 414.692 145.264 480 249.635 480c26.301 0 48.562-4.544 61.101-7.788 6.167-1.595 10.027-7.708 8.788-13.957l-8.818-44.49z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">3541</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="GBP" ng-reflect-price="3038" ng-reflect-route-link="/info/ETH/GBP"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/ETH/GBP" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pound-sign" class="svg-inline--fa fa-pound-sign fa-w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M308 352h-45.495c-6.627 0-12 5.373-12 12v50.848H128V288h84c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-84v-63.556c0-32.266 24.562-57.086 61.792-57.086 23.658 0 45.878 11.505 57.652 18.849 5.151 3.213 11.888 2.051 15.688-2.685l28.493-35.513c4.233-5.276 3.279-13.005-2.119-17.081C273.124 54.56 236.576 32 187.931 32 106.026 32 48 84.742 48 157.961V224H20c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h28v128H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h296c6.627 0 12-5.373 12-12V364c0-6.627-5.373-12-12-12z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">3038</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="JPY" ng-reflect-price="466320" ng-reflect-route-link="/info/ETH/JPY"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/ETH/JPY" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="yen-sign" class="svg-inline--fa fa-yen-sign fa-w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M351.2 32h-65.3c-4.6 0-8.8 2.6-10.8 6.7l-55.4 113.2c-14.5 34.7-27.1 71.9-27.1 71.9h-1.3s-12.6-37.2-27.1-71.9L108.8 38.7c-2-4.1-6.2-6.7-10.8-6.7H32.8c-9.1 0-14.8 9.7-10.6 17.6L102.3 200H44c-6.6 0-12 5.4-12 12v32c0 6.6 5.4 12 12 12h88.2l19.8 37.2V320H44c-6.6 0-12 5.4-12 12v32c0 6.6 5.4 12 12 12h108v92c0 6.6 5.4 12 12 12h56c6.6 0 12-5.4 12-12v-92h108c6.6 0 12-5.4 12-12v-32c0-6.6-5.4-12-12-12H232v-26.8l19.8-37.2H340c6.6 0 12-5.4 12-12v-32c0-6.6-5.4-12-12-12h-58.3l80.1-150.4c4.3-7.9-1.5-17.6-10.6-17.6z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">466320</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="USD" ng-reflect-price="4292" ng-reflect-route-link="/info/ETH/USD"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/ETH/USD" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign" class="svg-inline--fa fa-dollar-sign fa-w-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512"><path fill="currentColor" d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">4292</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="ZAR" ng-reflect-price="62530" ng-reflect-route-link="/info/ETH/ZAR"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/ETH/ZAR" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><div _ngcontent-vef-c258="" class="currency-symbol"><b _ngcontent-vef-c258="">R</b></div><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">62530</span></div></mat-chip></app-quote-price></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></mat-chip-list></div></mat-chip></app-quote-row><app-quote-row _ngcontent-vef-c260="" _nghost-vef-c259="" ng-reflect-symbol="LTC" ng-reflect-quotes="[object Map]" style="flex-direction: row; box-sizing: border-box; display: flex;"><mat-chip _ngcontent-vef-c259="" role="option" fxflex="grow" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" ng-reflect-fx-flex="grow" tabindex="-1" aria-disabled="false" style="flex: 1 1 100%; box-sizing: border-box; max-width: 100%; flex-direction: row; display: flex;"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c259="" fxlayout="row" fxlayoutalign="space-between center" fxflex="" class="quote-row" ng-reflect-fx-flex="" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-between center" style="flex: 1 1 0%; box-sizing: border-box; flex-direction: row; display: flex; place-content: center space-between; align-items: center;"><div _ngcontent-vef-c259="" fxflex="10" ng-reflect-fx-flex="10" style="flex: 1 1 100%; box-sizing: border-box; max-width: 10%;"><span _ngcontent-vef-c259="" class="coin-symbol">LTC</span></div><span _ngcontent-vef-c259="" style="flex: 1 1 auto;"></span><mat-chip-list _ngcontent-vef-c259="" cdkdroplistorientation="horizontal" class="mat-chip-list quote-row-price-list" id="mat-chip-list-5" tabindex="-1" aria-disabled="false" aria-invalid="false" aria-multiselectable="false" aria-orientation="horizontal"><div class="mat-chip-list-wrapper"><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="EUR" ng-reflect-price="313" ng-reflect-route-link="/info/LTC/EUR"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/LTC/EUR" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="euro-sign" class="svg-inline--fa fa-euro-sign fa-w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.706 413.765c-1.314-6.63-7.835-10.872-14.424-9.369-10.692 2.439-27.422 5.413-45.426 5.413-56.763 0-101.929-34.79-121.461-85.449h113.689a12 12 0 0 0 11.708-9.369l6.373-28.36c1.686-7.502-4.019-14.631-11.708-14.631H115.22c-1.21-14.328-1.414-28.287.137-42.245H261.95a12 12 0 0 0 11.723-9.434l6.512-29.755c1.638-7.484-4.061-14.566-11.723-14.566H130.184c20.633-44.991 62.69-75.03 117.619-75.03 14.486 0 28.564 2.25 37.851 4.145 6.216 1.268 12.347-2.498 14.002-8.623l11.991-44.368c1.822-6.741-2.465-13.616-9.326-14.917C290.217 34.912 270.71 32 249.635 32 152.451 32 74.03 92.252 45.075 176H12c-6.627 0-12 5.373-12 12v29.755c0 6.627 5.373 12 12 12h21.569c-1.009 13.607-1.181 29.287-.181 42.245H12c-6.627 0-12 5.373-12 12v28.36c0 6.627 5.373 12 12 12h30.114C67.139 414.692 145.264 480 249.635 480c26.301 0 48.562-4.544 61.101-7.788 6.167-1.595 10.027-7.708 8.788-13.957l-8.818-44.49z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">313</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="GBP" ng-reflect-price="269" ng-reflect-route-link="/info/LTC/GBP"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/LTC/GBP" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pound-sign" class="svg-inline--fa fa-pound-sign fa-w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M308 352h-45.495c-6.627 0-12 5.373-12 12v50.848H128V288h84c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-84v-63.556c0-32.266 24.562-57.086 61.792-57.086 23.658 0 45.878 11.505 57.652 18.849 5.151 3.213 11.888 2.051 15.688-2.685l28.493-35.513c4.233-5.276 3.279-13.005-2.119-17.081C273.124 54.56 236.576 32 187.931 32 106.026 32 48 84.742 48 157.961V224H20c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h28v128H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h296c6.627 0 12-5.373 12-12V364c0-6.627-5.373-12-12-12z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">269</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="JPY" ng-reflect-price="41310" ng-reflect-route-link="/info/LTC/JPY"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/LTC/JPY" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="yen-sign" class="svg-inline--fa fa-yen-sign fa-w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M351.2 32h-65.3c-4.6 0-8.8 2.6-10.8 6.7l-55.4 113.2c-14.5 34.7-27.1 71.9-27.1 71.9h-1.3s-12.6-37.2-27.1-71.9L108.8 38.7c-2-4.1-6.2-6.7-10.8-6.7H32.8c-9.1 0-14.8 9.7-10.6 17.6L102.3 200H44c-6.6 0-12 5.4-12 12v32c0 6.6 5.4 12 12 12h88.2l19.8 37.2V320H44c-6.6 0-12 5.4-12 12v32c0 6.6 5.4 12 12 12h108v92c0 6.6 5.4 12 12 12h56c6.6 0 12-5.4 12-12v-92h108c6.6 0 12-5.4 12-12v-32c0-6.6-5.4-12-12-12H232v-26.8l19.8-37.2H340c6.6 0 12-5.4 12-12v-32c0-6.6-5.4-12-12-12h-58.3l80.1-150.4c4.3-7.9-1.5-17.6-10.6-17.6z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">41310</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="USD" ng-reflect-price="380" ng-reflect-route-link="/info/LTC/USD"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/LTC/USD" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign" class="svg-inline--fa fa-dollar-sign fa-w-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512"><path fill="currentColor" d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">380</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="ZAR" ng-reflect-price="5538" ng-reflect-route-link="/info/LTC/ZAR"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/LTC/ZAR" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><div _ngcontent-vef-c258="" class="currency-symbol"><b _ngcontent-vef-c258="">R</b></div><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">5538</span></div></mat-chip></app-quote-price></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></mat-chip-list></div></mat-chip></app-quote-row><app-quote-row _ngcontent-vef-c260="" _nghost-vef-c259="" ng-reflect-symbol="XRP" ng-reflect-quotes="[object Map]" style="flex-direction: row; box-sizing: border-box; display: flex;"><mat-chip _ngcontent-vef-c259="" role="option" fxflex="grow" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" ng-reflect-fx-flex="grow" tabindex="-1" aria-disabled="false" style="flex: 1 1 100%; box-sizing: border-box; max-width: 100%; flex-direction: row; display: flex;"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c259="" fxlayout="row" fxlayoutalign="space-between center" fxflex="" class="quote-row" ng-reflect-fx-flex="" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-between center" style="flex: 1 1 0%; box-sizing: border-box; flex-direction: row; display: flex; place-content: center space-between; align-items: center;"><div _ngcontent-vef-c259="" fxflex="10" ng-reflect-fx-flex="10" style="flex: 1 1 100%; box-sizing: border-box; max-width: 10%;"><span _ngcontent-vef-c259="" class="coin-symbol">XRP</span></div><span _ngcontent-vef-c259="" style="flex: 1 1 auto;"></span><mat-chip-list _ngcontent-vef-c259="" cdkdroplistorientation="horizontal" class="mat-chip-list quote-row-price-list" id="mat-chip-list-6" tabindex="-1" aria-disabled="false" aria-invalid="false" aria-multiselectable="false" aria-orientation="horizontal"><div class="mat-chip-list-wrapper"><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="EUR" ng-reflect-price="1" ng-reflect-route-link="/info/XRP/EUR"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/XRP/EUR" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="euro-sign" class="svg-inline--fa fa-euro-sign fa-w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.706 413.765c-1.314-6.63-7.835-10.872-14.424-9.369-10.692 2.439-27.422 5.413-45.426 5.413-56.763 0-101.929-34.79-121.461-85.449h113.689a12 12 0 0 0 11.708-9.369l6.373-28.36c1.686-7.502-4.019-14.631-11.708-14.631H115.22c-1.21-14.328-1.414-28.287.137-42.245H261.95a12 12 0 0 0 11.723-9.434l6.512-29.755c1.638-7.484-4.061-14.566-11.723-14.566H130.184c20.633-44.991 62.69-75.03 117.619-75.03 14.486 0 28.564 2.25 37.851 4.145 6.216 1.268 12.347-2.498 14.002-8.623l11.991-44.368c1.822-6.741-2.465-13.616-9.326-14.917C290.217 34.912 270.71 32 249.635 32 152.451 32 74.03 92.252 45.075 176H12c-6.627 0-12 5.373-12 12v29.755c0 6.627 5.373 12 12 12h21.569c-1.009 13.607-1.181 29.287-.181 42.245H12c-6.627 0-12 5.373-12 12v28.36c0 6.627 5.373 12 12 12h30.114C67.139 414.692 145.264 480 249.635 480c26.301 0 48.562-4.544 61.101-7.788 6.167-1.595 10.027-7.708 8.788-13.957l-8.818-44.49z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">1</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="GBP" ng-reflect-price="1" ng-reflect-route-link="/info/XRP/GBP"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/XRP/GBP" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pound-sign" class="svg-inline--fa fa-pound-sign fa-w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M308 352h-45.495c-6.627 0-12 5.373-12 12v50.848H128V288h84c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-84v-63.556c0-32.266 24.562-57.086 61.792-57.086 23.658 0 45.878 11.505 57.652 18.849 5.151 3.213 11.888 2.051 15.688-2.685l28.493-35.513c4.233-5.276 3.279-13.005-2.119-17.081C273.124 54.56 236.576 32 187.931 32 106.026 32 48 84.742 48 157.961V224H20c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h28v128H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h296c6.627 0 12-5.373 12-12V364c0-6.627-5.373-12-12-12z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">1</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="JPY" ng-reflect-price="159" ng-reflect-route-link="/info/XRP/JPY"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/XRP/JPY" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="yen-sign" class="svg-inline--fa fa-yen-sign fa-w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M351.2 32h-65.3c-4.6 0-8.8 2.6-10.8 6.7l-55.4 113.2c-14.5 34.7-27.1 71.9-27.1 71.9h-1.3s-12.6-37.2-27.1-71.9L108.8 38.7c-2-4.1-6.2-6.7-10.8-6.7H32.8c-9.1 0-14.8 9.7-10.6 17.6L102.3 200H44c-6.6 0-12 5.4-12 12v32c0 6.6 5.4 12 12 12h88.2l19.8 37.2V320H44c-6.6 0-12 5.4-12 12v32c0 6.6 5.4 12 12 12h108v92c0 6.6 5.4 12 12 12h56c6.6 0 12-5.4 12-12v-92h108c6.6 0 12-5.4 12-12v-32c0-6.6-5.4-12-12-12H232v-26.8l19.8-37.2H340c6.6 0 12-5.4 12-12v-32c0-6.6-5.4-12-12-12h-58.3l80.1-150.4c4.3-7.9-1.5-17.6-10.6-17.6z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">159</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="USD" ng-reflect-price="1" ng-reflect-route-link="/info/XRP/USD"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/XRP/USD" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><fa-icon _ngcontent-vef-c258="" class="ng-fa-icon currency-symbol" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign" class="svg-inline--fa fa-dollar-sign fa-w-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512"><path fill="currentColor" d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z"></path></svg></fa-icon><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">1</span></div></mat-chip></app-quote-price></div><div _ngcontent-vef-c259=""><app-quote-price _ngcontent-vef-c259="" _nghost-vef-c258="" ng-reflect-symbol="ZAR" ng-reflect-price="21" ng-reflect-route-link="/info/XRP/ZAR"><mat-chip _ngcontent-vef-c258="" role="option" class="mat-chip mat-focus-indicator mat-primary mat-standard-chip" tabindex="-1" ng-reflect-router-link="/info/XRP/ZAR" aria-disabled="false"><div class="mat-chip-ripple"></div><div _ngcontent-vef-c258="" fxlayout="row" fxlayoutalign="space-around" ng-reflect-fx-layout="row" ng-reflect-fx-layout-align="space-around" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-around; align-items: stretch;"><div _ngcontent-vef-c258="" class="currency-symbol"><b _ngcontent-vef-c258="">R</b></div><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--><span _ngcontent-vef-c258="" ng-reflect-ng-class="price-unchanged" class="price-unchanged">21</span></div></mat-chip></app-quote-price></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></mat-chip-list></div></mat-chip></app-quote-row><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></mat-chip-list></div><!--bindings={
+  "ng-reflect-ng-if": "[object Map]"
+}--></div></div></app-quotes><!--container--></mat-sidenav-content><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></mat-sidenav-container></app-layout><!--container--></app-root>
+<script id="ScullyIO-transfer-state"></script><script src="runtime.js" defer=""></script><script src="polyfills.js" defer=""></script><script src="vendor.js" defer=""></script><script src="main.js" defer=""></script>
+
+</body></html>
